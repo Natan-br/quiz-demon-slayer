@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0; /* Mudei de red para cinza para melhor legibilidade */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    font-weight: 400;
+    line-height: 1.6; /* Melhora espaçamento entre linhas */
+}
+
+/* HEADER - FALTA ESTILIZAR */
+header {
+    padding: 30px 20px; /* Aumentei padding */
+    background: linear-gradient(135deg, #000000, #2a0a0a); /* Gradiente temático */
+    text-align: center;
+    border-bottom: 5px solid #B71C1C; /* Borda inferior */
+    box-shadow: 0 4px 12px rgba(183, 28, 28, 0.3); /* Sombra */
+}
+
+h1 {
+    color: #B71C1C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em; /* Tamanho maior */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+/* PARÁGRAFOS - MELHORAR */
+p {
+    color: #bdbdbd;
+    line-height: 1.6; /* Melhor legibilidade */
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+}
+
+/* MAIN - FALTA ESTILIZAR */
+main {
+    padding: 20px;
+    max-width: 900px; /* Largura máxima */
+    margin: 0 auto; /* Centralizar */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Aumentei o gap */
+}
+
+/* SECTIONS - FALTA ESTILIZAR */
+section {
+    background: #1a1a1a; /* Fundo escuro */
+    color: #e0e0e0;
+    padding: 25px; /* Padding interno */
+    border-radius: 10px; /* Cantos arredondados */
+    border-left: 5px solid #B71C1C; /* Borda lateral */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin: 20px 0; /* Margem externa */
+}
+
+/* h2 - MELHORAR */
+h2 {
+    color: #00bfff;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #00bfff; /* Linha inferior */
+    padding-bottom: 10px;
+}
+
+/* PERGUNTAS - CLASSE ESPECÍFICA */
+.pergunta {
+    background: #1a1a1a;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #B71C1C;
+    position: relative;
+}
+
+.pergunta img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 2px solid #333;
+    max-width: 100%; /* Responsivo */
+    height: auto;
+}
+
+/* OPÇÕES - FALTA ESTILIZAR */
+.opcoes {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+input[type="radio"] {
+    accent-color: rgb(0, 38, 255); /* Mudei para vermelho temático */
+    margin-right: 10px;
+    transform: scale(1.2); /* Tamanho maior */
+}
+
+label {
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease; /* Transição suave */
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+label:hover {
+    background: #2a2a2a; /* Fundo ao passar mouse */
+    transform: translateX(5px); /* Leve movimento */
+}
+
+/* INPUT TEXTO - FALTA ESTILIZAR */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #2a2a2a;
+    border: 2px solid #444;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #B71C1C; /* Borda vermelha no foco */
+}
+
+/* BOTÃO - FALTA ESTILIZAR */
+.btn-enviar {
+    background: linear-gradient(135deg, #B71C1C, #8B0000);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(183, 28, 28, 0.4);
+    background: linear-gradient(135deg, #8B0000, #B71C1C);
+}
+
+/* TABELA - FALTA ESTILIZAR */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+th {
+    background: #B71C1C;
+    color: white;
+    font-weight: bold;
+}
+
+/* FORMULÁRIO FEEDBACK - FALTA ESTILIZAR */
+fieldset {
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #242424;
+}
+
+legend {
+    color: #00bfff;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    background: #2a2a2a;
+    border: 2px solid #444;
+    color: white;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #B71C1C;
+}
+
+/* DETAILS/SUMMARY - FALTA ESTILIZAR */
+details {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+summary {
+    cursor: pointer;
+    color: #00bfff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+ol {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+li {
+    margin: 10px 0;
+    padding: 8px;
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+
+/* FOOTER - FALTA ESTILIZAR */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #bdbdbd;
+    margin-top: 40px;
+    border-top: 3px solid #B71C1C;
+}
+
+/* RESPONSIVIDADE - FALTA ADICIONAR */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .pergunta img {
+        width: 100%;
+    }
+    
+    .btn-enviar {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+/* ANIMAÇÕES - OPCIONAL MAS RECOMENDADO */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.6s ease-out;
+}
